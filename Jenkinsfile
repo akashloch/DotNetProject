@@ -4,7 +4,7 @@ pipeline {
          dotnet = 'C:\\Program Files\\dotnet\\sdk\\3.1.202'
       }
       parameters{
-         string(name: 'Production Api keys', default value: 'oy2k2rc4nhmpplqeg3iqnzxedqgac65utgwfqih232wjl4', description: 'Prod Api keys')
+         string(name: 'QA_Api_keys', default value: 'oy2a7xcmjwrcefzruzsqpd3zbib6rodeneyr4cfrp6c7ei', description: 'QA Api keys')
 
       }
       triggers{
@@ -34,6 +34,11 @@ pipeline {
       stage('Pack') {
          steps {
                bat 'dotnet pack --no-build --output nupkgs'
+            }
+         }
+      stage('Publish') {
+         steps {
+              bat "dotnet nuget push **\\nupkgs\\*.nupkg -k ${params.QA_Api_keys} -s http://myserver/artifactory/api/nuget/nuget-internal-stable/com/sample"
             }
          }
       }
