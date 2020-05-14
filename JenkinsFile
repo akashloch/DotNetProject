@@ -1,5 +1,5 @@
 pipeline {
-agent any
+agent {label 'master'}
 environment {
 dotnet = '"C:\\Program Files\\dotnet\\dotnet.exe"'
 }
