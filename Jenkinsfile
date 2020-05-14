@@ -4,7 +4,7 @@ pipeline {
          dotnet = 'C:\\Program Files\\dotnet\\sdk\\3.1.202'
       }
       parameters{
-         string(name: 'QA Api keys', default value: 'oy2a7xcmjwrcefzruzsqpd3zbib6rodeneyr4cfrp6c7ei', description: 'QA Api keys')
+         string(name: 'Production Api keys', default value: 'oy2k2rc4nhmpplqeg3iqnzxedqgac65utgwfqih232wjl4', description: 'Prod Api keys')
 
       }
       triggers{
