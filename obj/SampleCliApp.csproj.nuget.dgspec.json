@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Akki Loch\\OneDrive\\Desktop\\my stuff\\devops\\git\\SampleCliApp\\SampleCliApp.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Akki Loch\\OneDrive\\Desktop\\my stuff\\devops\\git\\SampleCliApp\\SampleCliApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Akki Loch\\OneDrive\\Desktop\\my stuff\\devops\\git\\SampleCliApp\\SampleCliApp.csproj",
+        "projectName": "SampleCliApp",
+        "projectPath": "c:\\Users\\Akki Loch\\OneDrive\\Desktop\\my stuff\\devops\\git\\SampleCliApp\\SampleCliApp.csproj",
+        "packagesPath": "C:\\Users\\Akki Loch\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Akki Loch\\OneDrive\\Desktop\\my stuff\\devops\\git\\SampleCliApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Akki Loch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.1.0-preview1-final, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
