@@ -38,7 +38,7 @@ pipeline {
          }
       stage('Publish') {
          steps {
-                  bat "dotnet nuget push **\\nupkgs\\*.nupkg -k ${params.Production_Api_keys} -s http://myserver/artifactory/api/nuget/nuget-internal-stable/com/sample"
+                  bat "dotnet nuget push **\\nupkgs\\*.nupkg -k ${params.Production_Api_keys} -s https://www.nuget.org/"
             }
          }
          
