@@ -38,7 +38,7 @@ pipeline {
          }
       stage('Publish') {
          steps {
-              bat "dotnet nuget push **\\nupkgs\\*.nupkg -k ${hard coded} -s  https://www.nuget.org/"
+              bat "dotnet nuget push **\\nupkgs\\*.nupkg -k ${params.value} -s  https://www.nuget.org/"
             }
          }
       }
